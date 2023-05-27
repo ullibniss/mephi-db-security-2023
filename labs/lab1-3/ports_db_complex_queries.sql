@@ -12,4 +12,4 @@ SELECT * FROM Passenger WHERE ShipID IN (SELECT ID FROM ships where RouteID IN (
 
 SELECT * FROM Passenger WHERE ShipID IN (SELECT ID FROM ships where RouteID IN (SELECT ID FROM Routes WHERE DestinationID = 2 or SourceID = 2) INTERSECT SELECT ID FROM Ships WHERE ID != 12); 
 
-SELECT * FROM RouteID WHERE DestinationID NOT IN (SELECT PortID FROM Ships); 
+SELECT * FROM Routes WHERE DestinationID NOT IN (SELECT PortID FROM Ships); 
