@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ullibniss
+      POSTGRES_USER: ullibniss
+      POSTGRES_DB: ships_management
+    ports:
+    - 9999:5432
+    volumes:
+    - "/home/ullibniss/university/db_security/database/data:/var/lib/postgresql/data"
