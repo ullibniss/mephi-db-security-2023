@@ -12,5 +12,5 @@ SELECT Name, PortID, RouteID FROM Ships;
 
 SELECT avg(Age) FROM passenger WHERE ShipID = 1;
 
-SELECT (2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2);
+SELECT (2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2);
 

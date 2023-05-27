@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Ports (
     Name VARCHAR(255),
     Country VARCHAR(255),
     Capacity INT NOT NULL,
-    Occupancy INT NOT NULL,
+    Occupancy INT NOT NULL DEFAULT 0,
     PRIMARY KEY (ID)
 );
 
